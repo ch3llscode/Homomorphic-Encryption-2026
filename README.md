@@ -1,2 +1,8 @@
 # Homomorphic-Encryption-2026
-Server-client system where the client encrypts data, server performs addition on the encrypted data and sends encrypted results back to client, and client decrypts encrypted result.  
+This project is the result of my research experience of learning about homomorphic encryption with Professor Jung at Notre Dame. 
+
+This is a client-server model where both programs should run simulatenously. Before runnning either program though, you should run num.py first to generate and store the private and public keys and also produce encrypted numbers. This program should serialize the keys and encrypted numbers on .txt files. Later the client program will deserialize the private key to decrypt the encrypted result. 
+
+The client-server model works like this: the client encrypts their data and then sends the encrypted numbers to the server. The server then calculates the sum of the encrypted numbers and sends the result back to the client. Finally, the client will use the stored private key to decrypt the encrypted result to get the sum of the encrypted numbers.
+
+The purpose of these programs was to demostrate how the use of homomorphic encryption allows for the protection of the client's data while still enabling the server to do its job. Homomorphic encryption provides privacy and protection to the client's personal information. Unfortunately when building this program, I was unable to figure out how to send the .txt files from server to client if they are different devices. So for the matter of actually running the program make sure you open the client and server program on the same device. 
